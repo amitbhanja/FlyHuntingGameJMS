@@ -1,0 +1,17 @@
+<project>
+<description>
+TK1 - programming assignment X
+--------------------------
+Group Members:
+Amit Bhanja (2579678)
+Raghunath Deshpande (2827252)
+Banashri Mandal (2992721)
+</description>
+	<target name="build-all">
+		<parallel>
+			<ant antfile="../JMS/build.xml" dir="../JMS" target="Client1" inheritAll="false" />
+			<ant antfile="../JMS/build.xml" dir="../JMS" target="Client2" inheritAll="false" />
+		</parallel>
+	</target>
+</project>
+  
